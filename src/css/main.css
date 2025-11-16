@@ -12,3 +12,108 @@ img,
 video {
   display: block;
 }
+
+body {
+  margin: 50px 0;
+  font-family: Roboto;
+}
+
+.chart {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 422px;
+}
+
+.region-block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+  width: 100%;
+}
+
+.label {
+  min-width: 100px;
+  text-align: right;
+  font-size: 16px;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.mobile {
+  background: #ffcc2f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.desktop {
+  background: #37d3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 0;
+  border-radius: 0 10px 10px 0;
+}
+
+.usa .mobile {
+  width: 51%;
+}
+.usa .desktop {
+  width: 49%;
+}
+
+.europe .mobile {
+  width: 41%;
+}
+.europe .desktop {
+  width: 59%;
+}
+
+.suisse .mobile {
+  width: 65%;
+}
+.suisse .desktop {
+  width: 35%;
+}
+
+.legend {
+  display: flex;
+  width: 422px;
+  padding: 20px 0 20px 120px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rectangle {
+  width: 16px;
+  height: 16px;
+}
+
+.rectangle-jaune {
+  background-color: #ffcc2f;
+}
+
+.rectangle-bleu {
+  background-color: #37d3d2;
+}
